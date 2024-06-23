@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art gallery</title>
+    <link rel="stylesheet" href="art.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
+</head>
+
+<body>
+    <div id="error">
+    </div>
+    <div id="home">
+        <div class="head">
+            <div class="navbar">
+                <div class="nav">
+                    <ul>
+                        <li> <a href="#home">Home</a> </li>
+                        <li> <a href="#about">About Us </a> </li>
+                        <li> <a href="#gallery">Gallery</a></li>
+                        <li> <a href="#blog">Blog</a></li>
+                        <li> <a href="#contactForm" onclick="contactpage">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="homedetail">
+            <h1>Art Gallery</h1>
+            <p>A gallery is a form of display, not necessarily the same as your local shop down the road, but in the context of art, it is a space
+                 where anyone interested in art or an art collection exhibited at a specific gallery, can view the work, and even make an inquiry into
+                  the purchase of an artwork</p>
+            <P>There were easels, palettes, canvasses of every size, oils, water colors, sketch pads, pencil sets, brushes, virtually anything an 
+                artist would need. Each poster is signed by the artist. I'm not a good artist . the books are enormosly easy to read ,yet he is a 
+                serious artist. </P>
+            <div class="button">
+              
+                
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="aboutimg">
+            <img src="about.jpg" alt="">
+        </div>
+        <div class="aboutinfo">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur facere suscipit omnis
+                inventore veritatis, harum modi labore? Atque, unde fuga sed ullam rem nihil animi.
+            </p>
+            
+        </div>
+    </div>
+    <div id="gallery">
+        <h1>Works of Artists</h1>
+        <hr>
+        <table>
+            <tr>
+                <td rowspan="2" class="galleryimg"><img src="art01.jpg" alt="" class="galleryimg"></td>
+                <td><img src="art02.jpg" alt=""></td>
+                <td rowspan="2" class="galleryimg"><img src="art03.jpg" alt=""></td>
+                <td><img src="art04.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="art05.jpg" alt=""></td>
+                <td><img src="art06.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src= "E:\project\Art gallery\Art gallery\art8.jpeg"alt=""></td>
+                <td><img src="E:\project\Art gallery\Art gallery\art07.jpg" alt=""></td>
+                </tr>
+        </table>
+    </div>
+   
+    
+    <div id="blog">
+        <h1>Our Blog</h1>
+        <hr>
+        <div class="blogmain">
+            <div class="box">
+                <div class="blogimg">
+                    <img src="blog1.jpg" alt="">
+                </div>
+                <div class="bloginfo">
+                    <p>10 Facts From the Life of the Most Expensive Artist of Our Time</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="blogimg">
+                    <img src="bog2.jpg" alt="">
+                </div>
+                <div class="bloginfo">
+                    <p>10 Facts From the Life of the Most Expensive Artist of Our Time</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="blogimg">
+                    <img src="blog3.jpg" alt="">
+                </div>
+                <div class="bloginfo">
+                    <p>10 Facts From the Life of the Most Expensive Artist of Our Time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+        <div class="col-lg-6">
+    
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="form.php">
+               
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                    <label for="name">Full name</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                    <label for="email">Email address</label>
+                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                    <label for="phone">Phone number</label>
+                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                </div>
+               
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                    <label for="message">Message</label>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                </div>
+                
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        To activate this form, sign up at
+                        <br />
+                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                
+                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+               
+                <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit" >Submit</button></div>
+            </form>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contmain">
+            <div class="conbox">
+                <div class="title">
+                    <H2>CONTACT US</H2>
+                </div>
+                <div class="coninfo">
+                    <p> 6036 Richmond hwy., Alexandria, VA, 2230</p>
+                    <p>+1 (409) 987–5874</p>
+                    <p> info@demolink.org</p>
+                </div>
+            </div>
+            <div class="conbox">
+                <div class="title">
+                    <H2>OPEN HOURS</H2>
+                </div>
+                <div class="coninfo">
+                    <p>Weekdays: 8:00–20:00</p>
+                    <p> Weekends: 9:00–18:00</p>
+                </div>
+            </div>
+            <div class="conbox">
+                <div class="title">
+                    <H2>NAVIGATION</H2>
+                </div>
+                <div class="continfo">
+                    <ul>
+                        <li> <a href="#home">Home</a> </li>
+                        <li> <a href="#about">About Us </a> </li>
+                        <li> <a href="#gallery">Gallery</a></li>
+                        <li> <a href="#blog">Blog</a></li>
+                        <li> <a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
